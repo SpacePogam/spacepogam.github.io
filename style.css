@@ -15,6 +15,20 @@
 	text-align: center;
 	color: #eeeeee;
 	}
+	h3 {
+	font-family: "alien-encounter";
+	font-size: 40px;
+	padding: 1px;
+	text-align: center;
+	color: #eeeeee;
+	}
+	h3 {
+	font-family: "alien-encounter";
+	font-size: 25px;
+	padding: 1px;
+	text-align: center;
+	color: #eeeeee;
+	}
 	p {
 		font-family: "verdana";
 		font-size: 24px;
@@ -22,8 +36,7 @@
 		padding: 15px;
 	}
 	p.noteb {
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
+		border-radius: 10px;
 		border-left: 5px solid #007732;
 		background-color: #065526;
 		font-family: "verdana";
@@ -43,10 +56,11 @@
 		padding: 15px;
 		font-family: "verdana";
 		font-size: 18px;
-		background-color: #3366ff;
+		background-color: #118834;
 		color: #eeeeee;
 		border-radius: 100px;
 		border: none;
+		margin: 10px;
 	}
 	footer {
 		background-color: #181818;
