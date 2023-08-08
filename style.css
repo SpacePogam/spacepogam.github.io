@@ -1,0 +1,53 @@
+@font-face {
+	font-family: alien-encounter;
+	src: url(Alien-Encounters-Bold-Italic.ttf);
+	}
+	
+	body {
+		background-color:#121212;
+		margin: 65px;
+	}
+	
+	h1 {
+	font-family: "alien-encounter";
+	font-size: 65px;
+	padding: 3px;
+	text-align: center;
+	color: #eeeeee;
+	}
+	p {
+		font-family: "verdana";
+		font-size: 24px;
+		color: #eeeeee;
+		padding: 15px;
+	}
+	p.noteb {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-left: 5px solid #007732;
+		background-color: #065526;
+		font-family: "verdana";
+		font-size: 24px;
+		color: #eeeeee;
+		padding: 15px;
+	}
+	marquee {
+	color: #eeeeee;
+	font-size:30px;
+	font-family:verdana;
+	font-style:italic;
+	margin: -65px;
+	padding-bottom: 65px;
+	}
+	button {
+		padding: 15px;
+		font-family: "verdana";
+		font-size: 18px;
+		background-color: #3366ff;
+		color: #eeeeee;
+		border-radius: 100px;
+		border: none;
+	}
+	footer {
+		background-color: #181818;
+	}
