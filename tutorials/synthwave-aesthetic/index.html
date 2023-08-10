@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link href="../../style.css" rel="stylesheet">
+<style>
+p {
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: "segoeui";
+	font-size: 22px;
+	color: #eeeeee;
+	padding: 15px;
+	text-align: center;
+}
+a:link {
+  color: #ff6e19;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #ff6e19;
+  background-color: transparent;
+  text-decoration: none;
+}
+</style>
+<body>
+<h1>SpacePogam.eu.org</h1>
+<h3>Synthwave Aesthetic Tutorial</h3>
+<center>
+<p class="noteo" style="margin-left:450px;margin-right:475px;border-right:5px solid #ff5f14;text-align:center">You will need:<br><br>- Blender (FREE)<br>- A computer (NOT FREE)</p>
+<p>1. Create a "General" Blender project. Delete everything inside of it and add a Plane. It will now be referred to as Floor.</p>
+<img src="1.png" alt="1" width="369" height="348" style="border-radius:50px;padding:15px">
+<p>2. Keep Floor selected, press S again, press Shift+Z and then press 8.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- Shift+Z locks Scale mode to the axis that aren't Z (X and Y).</p>
+<img src="2.png" alt="2" width="510" height="350" style="border-radius:40px;padding:15px">
+<p>3. Enter Edit Mode by either holding Tab and moving the mouse towards it, or selecting Edit Mode in the top left where Object Mode is.</p>
+<p>4. Ensure all dots are in Orange (if not, press A) and right click, select Subdivide. In the bottom left corner there should now be a subdivide tab, open it.<br><br>5. Set the Number of Cuts to 30.</p>
+<img src="4.png" alt="4" width="273" height="188" style="border-radius:30px;padding:15px">
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">Want to have rocky hills at the edges of your render? <a href="#rocky-edges"><u>SKIP TO ROCKY HILLS!</u></a><br><br>From now, the guide will feature rocky hills in future images.</p>
+<p>6. Go back to Object Mode. Add an Empty > Plain Axes to the scene. Set it's position to one of the edges using 8 or -8 on X or Y.</p>
+<img src="6.png" alt="6" width="836" height="449" style="border-radius:50px;padding:15px">
+<p>7. Select the Floor again and add a Mirror modifier in the Modifiers tab.</p>
+<img src="7.png" alt="7" width="235" height="387" style="border-radius:30px;padding:15px">
+<p>8. Set the options how they are in the image above.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- If Axis X doesn't work for you, try Y!</p>
+<p>9. Add an Array modifier now. Set the count to something like 10.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- This will let you seamlessly loop the animation.</p>
+<p>10. Now we start designing. Set the Viewport Shading to Material in the top right.</p>
+<img src="10.png" alt="10" width="252" height="54" style="border-radius:30px;padding:15px;margin-top:-45px">
+<p>11. Select Floor and go to the Shading tab at the top.</p>
+<p>12. At the bottom, ensure that "Material" is selected and delete the Principled BSDF. This will make it pitch black.</p>
+<p>13. Create a new material, delete the principled BSDF and add an Emission Node. Set the colour to whatever you like and link it to Material Output. Set emission strength to something like 50.</p>
+<p>14. Go back and select Floor, go to modifiers and add a Wireframe. Set the thickness to 0.005 or smaller, disable "Replace Original Geometry" and set the Material Offset to 1.</p>
+<img src="14.png" alt="14" width="186" height="247" style="border-radius:30px;padding:15px">
+<p>15. Go to Render Properties tab (The little camera icon) and enable Bloom.</p>
+<p>16. Add a UV Sphere Mesh. Right-Click and Shade Smooth. Move this to the very end of your road.</p>
+<p>17. Add a new material. Use this node setup in the Shading tab, set the colours to what you would like.</p>
+<img src="17.png" alt="17" width="772" height="213" style="border-radius:30px;padding:15px">
+<p>18. Add a camera to the scene and place it at 8 or -8 on the X or Y axis. Set its rotations as follows:<br><br>	- X: 90, Y: 0, Z: 90 or -90.<br>	- Drag the camera up a little bit out of the ground. X can be slightly higher, such as 93.</p>
+<p>19. The animation tab should be at the bottom, squished. Drag it up, and set "End" to 120.</p>
+<p>20. Go to frame 1 and click the diamond next to whichever position value you set to 8 or -8.</p>
+<p>21. Click frame 121 (It will be out of the animation scope, don't worry!) and set the Camera position from 8/-8 to 24/-24. Press the diamond again.</p>
+<p>22. Select the Sun, then select the Camera. Press Ctrl+P and select Object.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- The Sun will now move with the camera to ensure it does not appear getting closer.</p>
+<p>23. Preview the animation to make sure it loops.</p>
+<p>24. Render the animation in the Render tab! It may take a WHILE.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- To render as a video, go to Output Properties and change PNG to FFMPEG Video, then open the Encoding tab and select MPEG-4.</p>
+<h3 id="rocky-edges">Adding Rocky Edges</h3>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">This section is not required, but can improve the aesthetic of your render.</p>
+<p>A-1. Press the circle in the toolbar at the top to make it blue. Press Alt+O.</p>
+<img src="a1.png" alt="a1" width="578" height="25" style="border-radius:20px;padding:15px">
+<p>A-2. Select vertices close to the edge, but not completely off the edge.</p>
+<img src="a2.png" alt="a2" width="665" height="391" style="border-radius:50px;padding:15px">
+<p>A-3. Using the move tool, drag the points upwards. While holding the blue arrow, use the scroll wheel to set how much will be affected by the transform.</p>
+<p class="noteo" style="margin-left:425px;margin-right:450px;border-right:5px solid #ff5f14;text-align:center">- This tool is called Proportional Editing. It allows you to move vertices and affect the others surrounding it to make a smoother transform.</p>
+<br>
+<a href="../../index.html"><button style="font-size:32px;padding:30px"><b>Return to Main Page</b></button></a>
+</center>
+</body>
+</html>
