@@ -10,9 +10,13 @@
 	font-family: ubuntu;
 	src: url(fonts/Ubuntu-Medium.ttf);
 	}
-	@font-face {
+@font-face {
 	font-family: segoeui;
 	src: url(fonts/segoeui.ttf);
+	}
+@font-face {
+	font-family: consola;
+	src: url(download-terminal/consola.ttf);
 	}
 	
 	body {
