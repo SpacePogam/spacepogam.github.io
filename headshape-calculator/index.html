@@ -3,9 +3,18 @@
 <link href="../style.css" rel="stylesheet">
 <head><script src="headinfo.js"></script></head>
 <body>
-<h1>SpacePogam.github.io</h1>
-<h3>"The New Denpa Men" Headshape Calculator</h3>
+<div style="width:50%;float:left;overflow-y:scroll"><h3>STAGE 0</h3>
+<h1 style="font-size:40px">SpacePogam.github.io</h1>
+<h3 style="font-size:30px">"The New Denpa Men" Headshape Calculator</h3>
 <p class="noteg"><b>This information may not be accurate as The Denpa Men Community may not have explored every possibility.</b><br>Some combinations may produce multiple results.<br>Icons and headshape names from lovetechnictix on Discord.</p>
+
+<button id="circle" onclick="changeHead(id)">Circle</button>
+<button id="ellipse" onclick="changeHead(id)">Ellipse</button>
+<button id="square" onclick="changeHead(id)">Square</button>
+<button id="triangle" onclick="changeHead(id)">Triangle</button>
+<button id="soap" onclick="changeHead(id)">Soap</button>
+<button id="balloon" onclick="changeHead(id)">Balloon</button>
+
 <h3>STAGE 1</h3>
 <button id="bear" onclick="changeHead(id)">Bear</button>
 <button id="onion" onclick="changeHead(id)">Onion</button>
@@ -26,6 +35,23 @@
 <button id="sparkle" onclick="changeHead(id)">Sparkle</button>
 <button id="dreidel" onclick="changeHead(id)">Dreidel</button>
 
+<h3>STAGE 2</h3>
+<button id="crescent" onclick="changeHead(id)">Crescent</button>
+<button id="cat" onclick="changeHead(id)">Cat</button>
+<button id="jester" onclick="changeHead(id)">Jester</button>
+<button id="mouse" onclick="changeHead(id)">Mouse</button>
+<button id="sheep" onclick="changeHead(id)">Sheep</button>
+<button id="fishbowl" onclick="changeHead(id)">Fishbowl</button>
+<button id="tower" onclick="changeHead(id)">Tower</button>
+<button id="mozart" onclick="changeHead(id)">Mozart</button>
+<button id="devil" onclick="changeHead(id)">Devil</button>
+<button id="dog" onclick="changeHead(id)">Dog</button>
+<button id="meteor" onclick="changeHead(id)">Meteor</button>
+<button id="pot" onclick="changeHead(id)">Pot</button>
+<button id="tripeaks" onclick="changeHead(id)">Tri-Peaks</button>
+<button id="waves" onclick="changeHead(id)">Waves</button>
+</div>
+
 <script>
       function changeHead(head) {
         const view = document.getElementById("view"); // The view
@@ -37,7 +63,10 @@
         image.src = "img/"+head+".png"
       }
     </script>
-<img src="" style="float:right;border-radius:40px" id="image">
-<p id="view">No Headshape</p>
+
+<div style="margin-left:50%;position:fixed">
+<img src="" style="border-radius:30px;height:256px;width:256px" id="image">
+<br>
+<p id="view">No Headshape</p></div>
 </body>
 </html>
