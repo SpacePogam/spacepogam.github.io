@@ -1,0 +1,28 @@
+// stage 1
+const bear = ["Bear","Circle+Circle"]
+const onion = ["Onion","Circle+Circle"]
+const slime = ["Slime","Circle+Circle"]
+const whip = ["Whip","Circle+Circle"]
+const bean = ["Bean","Circle+Ellipse"]
+const soap = ["Soap","Circle+Square"]
+const onigiri = ["Onigiri","Circle+Triangle"]
+const kagamimochi = ["Kagami Mochi","Balloon+Balloon"]
+const rocket = ["Rocket","Balloon+Balloon"]
+const ship = ["Ship","Balloon+Balloon"]
+const candy = ["Candy","Ellipse+Ellipse"]
+const headphones = ["Headphones","Ellipse+Ellipse\nSoap+Soap"]
+const lemon = ["Lemon","Ellipse+Ellipse\nSoap+Soap"]
+const thorns = ["Thorns","Ellipse+Ellipse\nSoap+Soap"]
+const concave = ["Concave","Square+Square"]
+const convex = ["Convex","Square+Square"]
+const buildingbrick = ["Building Brick","Square+Square"]
+const sparkle = ["Sparkle","Triangle+Triangle"]
+const dreidel = ["Dreidel","Triangle+Triangle"]
+
+// stage 2
+const crescent = ["Crescent","Bean+Bean\nBean+Dreidel\nBean+Devil"];
+const cat = ["Cat","Bear+Bear"]
+const jester = ["Jester","Bear+Bear"]
+const mouse = ["Mouse","Bear+Bear"]
+const sheep = ["Sheep","Bear+Bear"]
+const fishbowl = ["Fishbowl"]

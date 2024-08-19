@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link href="../style.css" rel="stylesheet">
+<head><script src="headinfo.js"></script></head>
+<body>
+<h1>SpacePogam.github.io</h1>
+<h3>"The New Denpa Men" Headshape Calculator</h3>
+<p class="noteg"><b>This information may not be accurate as The Denpa Men Community may not have explored every possibility.</b><br>Some combinations may produce multiple results.<br>Icons and headshape names from lovetechnictix on Discord.</p>
+<h3>STAGE 1</h3>
+<button id="bear" onclick="changeHead(id)">Bear</button>
+<button id="onion" onclick="changeHead(id)">Onion</button>
+<button id="slime" onclick="changeHead(id)">Slime</button>
+<button id="whip" onclick="changeHead(id)">Whip</button>
+<button id="bean" onclick="changeHead(id)">Bean</button>
+<button id="onigiri" onclick="changeHead(id)">Onigiri</button>
+<button id="kagamimochi" onclick="changeHead(id)">Kagami Mochi</button>
+<button id="rocket" onclick="changeHead(id)">Rocket</button>
+<button id="ship" onclick="changeHead(id)">Ship</button>
+<button id="candy" onclick="changeHead(id)">Candy</button>
+<button id="headphones" onclick="changeHead(id)">Headphones</button>
+<button id="lemon" onclick="changeHead(id)">Lemon</button>
+<button id="thorns" onclick="changeHead(id)">Thorns</button>
+<button id="concave" onclick="changeHead(id)">Concave</button>
+<button id="convex" onclick="changeHead(id)">Convex</button>
+<button id="buildingbrick" onclick="changeHead(id)">Building Brick</button>
+<button id="sparkle" onclick="changeHead(id)">Sparkle</button>
+<button id="dreidel" onclick="changeHead(id)">Dreidel</button>
+
+<script>
+      function changeHead(head) {
+        const view = document.getElementById("view"); // The view
+        const image = document.getElementById("image");
+        const thingy = "\n\nCreation:\n"
+        
+        eval("{var texto = " + head + "[0]+thingy+" + head + "[1]}");
+        view.innerText = texto
+        image.src = "img/"+head+".png"
+      }
+    </script>
+<img src="" style="float:right;border-radius:40px" id="image">
+<p id="view">No Headshape</p>
+</body>
+</html>

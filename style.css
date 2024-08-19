@@ -18,6 +18,10 @@
 	font-family: consola;
 	src: url(download-terminal/consola.ttf);
 	}
+@font-face {
+	font-family: baloo2;
+	src: url(fonts/Baloo2.ttf);
+	}
 	
 	body {
 		background-color:#121212;
